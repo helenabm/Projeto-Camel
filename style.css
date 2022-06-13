@@ -78,12 +78,8 @@ main {
 
 
 /*BUTÃO*/
-
-a {
-    text-decoration: none;
-}
-
 button {
+    text-decoration: none;
     color: white; 
     background-color: #F28705;
     border: 0px;
