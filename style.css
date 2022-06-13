@@ -1,0 +1,112 @@
+main {
+    margin: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*POSICIONAMENTO*/
+.pf {
+    float: left;
+    margin-right: 50px;
+}
+
+.pa {
+    float: left;
+}
+
+/*DIV*/
+.back {
+    background-color: #F2BF80; 
+    padding: 70px !important;
+    margin: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+/*ORÇAMENTO*/
+.titulo{
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+/*VALOR TOTAL*/
+.dollar {
+    width: 25px;
+    height: 25px;
+    margin-right: 50px;
+    margin-top:5px;
+    margin-left: 12px;
+    float: left !important;
+}
+
+.valor{
+    font-size: 30px;
+}
+
+/*MENU E PRODUTO*/
+
+.menu {
+    width:50px;
+    height:50px;
+    margin-top: 40px;
+}
+
+.produto {
+    margin-top: 50px !important;
+    text-align: center !important;
+    margin-left: 100px;
+}
+
+/*FORMA DE PAGAMENTO*/
+
+.titulop {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.fontp { 
+    margin-left: 40px;
+    text-align: center;
+}
+
+.pi {
+    margin-left: 40px;
+}
+
+.containerp {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/*BUTÃO*/
+
+button {
+    text-decoration: none;
+    color: white; 
+    background-color: #F28705;
+    border: 0px;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 20px;
+    margin-left: 200px;
+}
+
+.radio-image label > input{
+    visibility: hidden;
+}
+
+.radio-image label > input + img{
+    cursor:pointer;
+    border-radius:50%;
+    padding: 25px;
+}
+.radio-image label > input:checked + img{
+    border:2px solid black;
+}
