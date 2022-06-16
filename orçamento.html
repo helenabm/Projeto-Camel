@@ -1,110 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Págine de Orçamento</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página de Orçamento</title>
 
-    <!--CSS-->
-    <link rel="stylesheet" href="style.css">
-</head>
+        <!--CSS-->
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <!--$$$$$$$$$$$$$$-->
-    </header>
+        <header>
+            <!--$$$$$$$$$$$$$$-->
+        </header>
 
-    <main >
+        <main>
 
-        <div class="back container">
-            <!--Título-->
-            <div>
-                <h1 class="titulo">ORÇAMENTO</h1>
-            </div>
-            
-            <div>
-                <!--Valor total-->
-                <div> 
-                    <img src="imag/dollar.png" alt="Valor Total" class="dollar">
-                    <p class="valor">R$ 297,00</p>
+            <div class="container" id="pai">
+                <!--Título-->
+                <div id="item">
+                    <h1><u>ORÇAMENTO</u></h1>
+                        
                 </div>
-
-                <!--Quantidade, Produto e Valor Individual-->
+                
                 <div>
-                    <div class="pf">
-                        <img src="imag/menu.png" alt="Menu" class="menu">
+                    <!--Valor total-->
+                    <div class="posicao" id="item"> 
+                        <img src="imag/dollar.png" alt="Valor Total" id="icon">
+                        <p id="total">R$ 297,00</p>
                     </div>
-                            
-                    <div class="pf">
+
+                    <!--Quantidade, Produto e Valor Individual-->
+                    <div id="item">
                         <div>
-                            <div class="produto pa">1x</div>
-                            <div class="produto pa">Nome do Produto</div>
-                            <div class="produto pa">R$ 99,00</div>
+                            <img src="imag/menu.png" alt="Menu" id="menu">
                         </div>
                                 
                         <div>
-                            <div class="produto pa">1x</div>
-                            <div class="produto pa">Nome do Produto</div>
-                            <div class="produto pa">R$ 99,00</div>
-                        </div>
-
-                        <div>
-                            <div class="produto pa">1x</div>
-                            <div class="produto pa">Nome do Produto</div>
-                            <div class="produto pa">R$ 99,00</div>
+                            <table id="coluna">
+                                <tr>
+                                    <td>1x</td>
+                                    <td>Nome do Produto</td>
+                                    <td>R$ 99,00</td>
+                                </tr>
+                                <tr>
+                                    <td>1x</td>
+                                    <td>Nome do Produto</td>
+                                    <td>R$ 99,00</td>
+                                </tr>
+                                <tr>
+                                    <td>1x</td>
+                                    <td>Nome do Produto</td>
+                                    <td>R$ 99,00</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!--Forma de Pagamento-->
-            <div>
-                <h3 class="titulop">Forma de Pagamento</h3>
-            </div>
-
-            <div>
-                <fieldset class="radio-image" style="border: solid #F2BF80">
-                    <label for="D">
-                        <input type="radio" name="menu" id="D" value="D">
-                            <img src="imag/dinheiro.png" alt="Dinheiro" style="width: 50px; height: 50px; margin-left: 40px;">
-                    </label>
-                    <label for="M">
-                        <input type="radio" name="menu" id="M" value="M">
-                            <img src="imag/cartão.png" alt="Cartão" style="width: 50px; height: 50px; margin-left: 40px;">
-                    </label>
-                    <label for="P">
-                        <input type="radio" name="menu" id="P" value="P">
-                             <img src="imag/pix.png" alt="Pix" style="width: 50px; height: 50px; margin-left: 40px;">
-                    </label>
-                </fieldset>
-
-                <div class="containerp">
-                    <div>
-                        <p class="fontp produto pa">Dinheiro</p>
+                <!--Forma de Pagamento-->
+                <div id="item"> 
+                    <img src="imag/linha.png" alt="Valor Total" id="linha">
+                        <h3>Forma de Pagamento</h3>
+                </div>
+                
+                <div class="radio-image" id="item">
+                    <div id="posicao">
+                        <label for="D">
+                            <input type="radio" name="menu" id="D" value="D">
+                                <img src="imag/dinheiro.png" alt="Dinheiro" id="check">
+                        </label>
                     </div>
-                    <div>
-                        <p class="fontp produto pa">Cartão</p>
+                    <div id="posicao">
+                        <label for="M">
+                            <input type="radio" name="menu" id="M" value="M">
+                                <img src="imag/cartão.png" alt="Cartão" id="check">
+                        </label>
                     </div>
-                    <div>
-                        <p class="fontp produto pa">Pix</p>
-                    </div>
+                    <div id="posicao">
+                        <label for="P">
+                            <input type="radio" name="menu" id="P" value="P">
+                                <img src="imag/pix.png" alt="Pix" id="check">
+                        </label>
+                    </div>  
                 </div>
 
+                <!--Botão-->
+                <a href='https://wa.me/5561982774612'><b>Encaminhar para um vendedor</b></a>
+
             </div>
 
-            <!--Botão-->
-            <a href='https://wa.me/5561982774612'><button><b>Encaminhar para um vendedor</b></button></a>
+        </main>
 
-        </div>
-
-    </main>
-
-    <footer>
-        <!--$$$$$$$$$$$-->
-    </footer>
-    
-</body>
-
+        <footer>
+            <!--$$$$$$$$$$$-->
+        </footer>
+    </body>
 </html>
