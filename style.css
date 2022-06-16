@@ -1,102 +1,91 @@
+body{
+    background-color: #EAEDED;
+}
+
 main {
-    margin: 200px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
-/*POSICIONAMENTO*/
-.pf {
-    float: left;
-    margin-right: 50px;
-}
-
-.pa {
-    float: left;
-}
-
-/*DIV*/
-.back {
-    background-color: #F2BF80; 
-    padding: 70px !important;
-    margin: 50px;
-}
-
+/*DIV PAI*/
 .container {
     display: flex;
     flex-direction: column;
+    padding: 3em;
 }
 
+#pai {
+    background-color: #F2BF80;
+    margin: auto;
+    max-width: 600px;
+    min-height: 900px;
+}
 
-/*ORÇAMENTO*/
-.titulo{
+/*MARGIN TOP DIVS*/
+#item {
+ margin: 3em 0 0 0;
+}
+
+/*TÍTULO*/
+h1{
     text-align: center;
-    text-decoration: underline;
+    margin-bottom: 0;
 }
 
+#linhah {
+    width: 5em;
+    height: 5em;
+}
+
+/*ÍCONES DE VALOR E MENU*/
+#icon {
+    height: 30px;
+    width: 30px;
+    float: left;
+    margin-left: 0.5em;
+}
+
+#menu {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-right: 10em;
+}
 
 /*VALOR TOTAL*/
-.dollar {
-    width: 25px;
-    height: 25px;
-    margin-right: 50px;
-    margin-top:5px;
-    margin-left: 12px;
-    float: left !important;
-}
-
-.valor{
+#total {
     font-size: 30px;
+    margin-left: 2em;
 }
 
-/*MENU E PRODUTO*/
-
-.menu {
-    width:50px;
-    height:50px;
-    margin-top: 40px;
-}
-
-.produto {
-    margin-top: 50px !important;
-    text-align: center !important;
-    margin-left: 100px;
+/*TABELA*/
+td {
+    text-align: center;
+    width: 10em;
+    padding: 1em;
+    margin-left: 8em;
 }
 
 /*FORMA DE PAGAMENTO*/
 
-.titulop {
-    margin-top: 60px;
-    margin-bottom: 40px;
+#linha {
+    height: 30px; 
+    margin-top: 12px; 
+    display: flex; 
+    float: left
 }
 
-.fontp { 
-    margin-left: 40px;
-    text-align: center;
+h3{
+    margin-left: 2em;
 }
 
-.pi {
-    margin-left: 40px;
-}
-
-.containerp {
+#posicao {
     display: flex;
-    flex-direction: row;
-    gap: 90px;
-    margin-left: 60px;
+    float: left;
 }
 
-
-
-/*BUTÃO*/
-
-button {
-    text-decoration: none;
-    color: white; 
-    background-color: #F28705;
-    border: 0px;
-    border-radius: 10px;
-    margin-top: 50px;
-    padding: 20px;
-    margin-left: 200px;
+#check {
+    width: 80px; 
+    height: 80px;
 }
 
 .radio-image label > input{
@@ -105,9 +94,22 @@ button {
 
 .radio-image label > input + img{
     cursor:pointer;
-    border-radius:50%;
-    padding: 25px;
+    padding: 1em;
 }
 .radio-image label > input:checked + img{
-    border:2px solid black;
+    border-radius: 50%;
+    background-color: white;
 }
+
+/*BOTÃO*/
+a {
+    text-decoration: none;
+    text-align: center;
+    padding: 1em;
+    color: white; 
+    background-color: #F28705;
+    border-radius: 10px;
+    margin: 5em auto 2em auto;
+    max-width: 16em;
+}
+
